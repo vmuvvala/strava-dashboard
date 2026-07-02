@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-02T14:10:59.593675+00:00",
+  "synced_at": "2026-07-02T17:53:06.939222+00:00",
   "stats": {
-    "total_runs": 55,
-    "total_km": 286.0,
-    "total_miles": 177.7,
+    "total_runs": 56,
+    "total_km": 291.1,
+    "total_miles": 180.9,
     "total_prs": 36,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
@@ -75,7 +75,7 @@
       },
       {
         "week": "2026-06-29",
-        "km": 14.82
+        "km": 19.99
       }
     ],
     "long_run_progression": [
@@ -155,6 +155,23 @@
   },
   "runs": [
     {
+      "id": "19151560811",
+      "name": "TAEB Thursday 3 m morning run",
+      "date": "2026-07-02",
+      "distance_km": 5.17,
+      "moving_time_sec": 2255,
+      "elapsed_time_sec": 2286,
+      "pace": "7:16",
+      "elevation_gain": 5.8,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 173.7,
+      "max_hr": 182.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
       "id": "19132296537",
       "name": "Warmup run before tracks",
       "date": "2026-06-30",
@@ -182,7 +199,7 @@
       "elevation_gain": 0.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 11,
+      "kudos_count": 13,
       "avg_hr": 167.5,
       "max_hr": 179.0,
       "calories": 0,
