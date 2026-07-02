@@ -5,7 +5,7 @@ Runs via GitHub Actions every 2 hours.
 """
 
 import os, json, time, requests
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 CLIENT_ID     = os.environ["STRAVA_CLIENT_ID"]
 CLIENT_SECRET = os.environ["STRAVA_CLIENT_SECRET"]
@@ -111,8 +111,6 @@ def compute_stats(runs):
     for r in runs:
         d = datetime.fromisoformat(r["date"])
         # Monday of that week
-        mon = d - __import__("timedelta", fromlist=["timedelta"])
-        from datetime import timedelta
         mon = (d - timedelta(days=d.weekday())).strftime("%Y-%m-%d")
         weeks[mon] = round(weeks.get(mon, 0) + r["distance_km"], 2)
     sorted_weeks = sorted(weeks.items())
