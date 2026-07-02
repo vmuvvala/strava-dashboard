@@ -8,99 +8,65 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
-/* ── tokens ─────────────────────────────────────────────── */
-:root {
-  --bg:       #0d0d0f;
-  --surface:  #141416;
-  --surface2: #1c1c1f;
-  --border:   #2a2a2d;
-  --text:     #e8e8e4;
-  --muted:    #6b6b6e;
-  --dim:      #3a3a3d;
-  --blue:     #3b82f6;
-  --green:    #22c55e;
-  --amber:    #f59e0b;
-  --red:      #ef4444;
-  --mono:     'DM Mono', monospace;
-  --sans:     'Inter', system-ui, sans-serif;
-  --radius:   10px;
-}
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; }
-body { min-height: 100vh; }
-
-/* ── layout ─────────────────────────────────────────────── */
-.shell  { max-width: 960px; margin: 0 auto; padding: 0 1.25rem 3rem; }
-header  { padding: 2rem 0 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.75rem; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-.logo   { display: flex; align-items: center; gap: .75rem; }
-.logo-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--blue); display: grid; place-items: center; font-size: 18px; flex-shrink: 0; }
-.logo h1 { font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
-.logo p  { font-size: 11px; color: var(--muted); margin-top: 2px; font-family: var(--mono); }
-.sync-info { font-size: 11px; color: var(--muted); font-family: var(--mono); text-align: right; }
-.sync-dot  { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--green); margin-right: 5px; vertical-align: middle; }
-
-/* ── kpi strip ──────────────────────────────────────────── */
-.kpi-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
-.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1rem; }
-.kpi-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 5px; }
-.kpi-value { font-size: 22px; font-weight: 500; font-family: var(--mono); letter-spacing: -.03em; }
-.kpi-sub   { font-size: 10px; color: var(--muted); margin-top: 3px; }
-
-/* ── section grid ───────────────────────────────────────── */
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
-.card   { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.1rem .9rem; }
-.card-full { grid-column: 1 / -1; }
-.card-title { font-size: 11px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; margin-bottom: .85rem; }
-.chart-wrap { position: relative; }
-
-/* ── tabs ───────────────────────────────────────────────── */
-.tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 1.25rem; overflow-x: auto; }
-.tab  { padding: 8px 16px; font-size: 12px; font-weight: 500; cursor: pointer; border: none; border-bottom: 2px solid transparent; color: var(--muted); background: none; white-space: nowrap; transition: color .15s, border-color .15s; }
-.tab:hover  { color: var(--text); }
-.tab.active { color: var(--text); border-bottom-color: var(--blue); }
-
-/* ── coaching cards ─────────────────────────────────────── */
-.coach-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; margin-bottom: 10px; border-left: 3px solid var(--blue); }
-.coach-head { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; margin-bottom: 6px; }
-.coach-body { font-size: 12px; color: var(--muted); line-height: 1.65; }
-.badge { font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: 500; margin-left: auto; flex-shrink: 0; }
-.badge-green  { background: rgba(34,197,94,.15);  color: #4ade80; }
-.badge-amber  { background: rgba(245,158,11,.15); color: #fbbf24; }
-.badge-blue   { background: rgba(59,130,246,.15); color: #93c5fd; }
-.badge-red    { background: rgba(239,68,68,.15);  color: #fca5a5; }
-
-/* ── milestone list ─────────────────────────────────────── */
-.milestone { display: flex; align-items: center; gap: 10px; padding: .65rem 0; border-bottom: 1px solid var(--border); font-size: 12px; }
-.milestone:last-child { border-bottom: none; }
-.milestone-icon { font-size: 16px; flex-shrink: 0; width: 24px; text-align: center; }
-.milestone-text { color: var(--muted); flex: 1; }
-.milestone-text strong { color: var(--text); }
-
-/* ── run table ──────────────────────────────────────────── */
-.run-table { width: 100%; border-collapse: collapse; font-size: 11px; font-family: var(--mono); }
-.run-table th { text-align: left; padding: 6px 8px; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--border); font-size: 10px; text-transform: uppercase; letter-spacing: .05em; }
-.run-table td { padding: 7px 8px; border-bottom: 1px solid var(--dim); color: var(--muted); }
-.run-table td:first-child { color: var(--text); font-family: var(--sans); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.run-table tr:last-child td { border-bottom: none; }
-.run-table tr:hover td { background: var(--surface2); }
-.type-pill { font-size: 9px; padding: 1px 6px; border-radius: 3px; font-weight: 500; }
-.type-interval { background: rgba(59,130,246,.2);  color: #93c5fd; }
-.type-long     { background: rgba(245,158,11,.2);  color: #fcd34d; }
-.type-hill     { background: rgba(239,68,68,.2);   color: #fca5a5; }
-.type-recovery { background: rgba(34,197,94,.2);   color: #86efac; }
-.type-easy     { background: rgba(107,114,128,.2); color: #9ca3af; }
-.type-tempo    { background: rgba(168,85,247,.2);  color: #d8b4fe; }
-
-.hidden { display: none; }
-
-/* ── footer ─────────────────────────────────────────────── */
-footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); font-family: var(--mono); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+:root{--bg:#0d0d0f;--surface:#141416;--surface2:#1c1c1f;--border:#2a2a2d;--text:#e8e8e4;--muted:#6b6b6e;--dim:#2a2a2d;--blue:#3b82f6;--green:#22c55e;--amber:#f59e0b;--red:#ef4444;--mono:'DM Mono',monospace;--sans:'Inter',system-ui,sans-serif;--radius:10px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px}
+body{min-height:100vh}
+.shell{max-width:960px;margin:0 auto;padding:0 1.25rem 3rem}
+header{padding:2rem 0 1.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.logo{display:flex;align-items:center;gap:.75rem}
+.logo-icon{width:36px;height:36px;border-radius:8px;background:var(--blue);display:grid;place-items:center;font-size:18px;flex-shrink:0}
+.logo h1{font-size:17px;font-weight:600;letter-spacing:-.02em}
+.logo p{font-size:11px;color:var(--muted);margin-top:2px;font-family:var(--mono)}
+.sync-info{font-size:11px;color:var(--muted);font-family:var(--mono);text-align:right}
+.sync-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:5px;vertical-align:middle}
+.kpi-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:1.5rem}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:.9rem 1rem}
+.kpi-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.kpi-value{font-size:22px;font-weight:500;font-family:var(--mono);letter-spacing:-.03em}
+.kpi-sub{font-size:10px;color:var(--muted);margin-top:3px}
+.tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:1.1rem;overflow-x:auto}
+.tab{padding:7px 14px;font-size:12px;font-weight:500;cursor:pointer;border:none;border-bottom:2px solid transparent;color:var(--muted);background:none;white-space:nowrap;transition:color .15s,border-color .15s}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--text);border-bottom-color:var(--blue)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:600px){.grid-2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.1rem .9rem}
+.card-full{grid-column:1/-1}
+.card-title{font-size:11px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.85rem}
+.chart-wrap{position:relative}
+.coach-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;margin-bottom:10px;border-left:3px solid var(--blue)}
+.coach-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;margin-bottom:6px}
+.coach-body{font-size:12px;color:var(--muted);line-height:1.65}
+.badge{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:500;margin-left:auto;flex-shrink:0}
+.badge-green{background:rgba(34,197,94,.15);color:#4ade80}
+.badge-amber{background:rgba(245,158,11,.15);color:#fbbf24}
+.badge-blue{background:rgba(59,130,246,.15);color:#93c5fd}
+.milestone{display:flex;align-items:center;gap:10px;padding:.65rem 0;border-bottom:1px solid var(--border);font-size:12px}
+.milestone:last-child{border-bottom:none}
+.milestone-icon{font-size:16px;flex-shrink:0;width:24px;text-align:center}
+.milestone-text{color:var(--muted);flex:1}
+.milestone-text strong{color:var(--text)}
+.run-table{width:100%;border-collapse:collapse;font-size:11px;font-family:var(--mono)}
+.run-table th{text-align:left;padding:6px 8px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--border);font-size:10px;text-transform:uppercase;letter-spacing:.05em}
+.run-table td{padding:7px 8px;border-bottom:1px solid var(--dim);color:var(--muted)}
+.run-table td:first-child{color:var(--text);font-family:var(--sans);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.run-table tr:last-child td{border-bottom:none}
+.run-table tr:hover td{background:var(--surface2)}
+.type-pill{font-size:9px;padding:1px 6px;border-radius:3px;font-weight:500}
+.type-interval{background:rgba(59,130,246,.2);color:#93c5fd}
+.type-long{background:rgba(245,158,11,.2);color:#fcd34d}
+.type-hill{background:rgba(239,68,68,.2);color:#fca5a5}
+.type-recovery{background:rgba(34,197,94,.2);color:#86efac}
+.type-easy{background:rgba(107,114,128,.2);color:#9ca3af}
+.type-tempo{background:rgba(168,85,247,.2);color:#d8b4fe}
+.hidden{display:none}
+.error-state{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:13px;font-family:var(--mono)}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:11px;color:var(--muted);font-family:var(--mono);display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
 </style>
 </head>
 <body>
 <div class="shell">
-
   <header>
     <div class="logo">
       <div class="logo-icon">🏃</div>
@@ -116,17 +82,15 @@ footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border
     </div>
   </header>
 
-  <!-- KPI strip -->
-  <div class="kpi-strip" id="kpiStrip">
-    <div class="kpi"><div class="kpi-label">Total runs</div><div class="kpi-value" id="kTotalRuns">—</div><div class="kpi-sub">since Jan 2026</div></div>
-    <div class="kpi"><div class="kpi-label">Total distance</div><div class="kpi-value" id="kTotalKm">—</div><div class="kpi-sub" id="kTotalMi">—</div></div>
-    <div class="kpi"><div class="kpi-label">Longest run</div><div class="kpi-value" id="kLongest">—</div><div class="kpi-sub">personal best</div></div>
+  <div class="kpi-strip">
+    <div class="kpi"><div class="kpi-label">Total runs</div><div class="kpi-value" id="kRuns">—</div><div class="kpi-sub">since Jan 2026</div></div>
+    <div class="kpi"><div class="kpi-label">Total distance</div><div class="kpi-value" id="kDist">—</div><div class="kpi-sub" id="kMiles">—</div></div>
+    <div class="kpi"><div class="kpi-label">Longest run</div><div class="kpi-value" id="kLong">—</div><div class="kpi-sub">personal best</div></div>
     <div class="kpi"><div class="kpi-label">Season PRs</div><div class="kpi-value" id="kPRs">—</div><div class="kpi-sub">segment & distance</div></div>
-    <div class="kpi"><div class="kpi-label">Peak week</div><div class="kpi-value" id="kPeakWeek">—</div><div class="kpi-sub">highest volume</div></div>
-    <div class="kpi"><div class="kpi-label">Est. best 5K</div><div class="kpi-value" id="kBest5k">—</div><div class="kpi-sub">from pace data</div></div>
+    <div class="kpi"><div class="kpi-label">Peak week</div><div class="kpi-value" id="kPeak">—</div><div class="kpi-sub">highest volume</div></div>
+    <div class="kpi"><div class="kpi-label">Est. best 5K</div><div class="kpi-value" id="k5k">—</div><div class="kpi-sub">from pace data</div></div>
   </div>
 
-  <!-- Tabs -->
   <div class="tabs">
     <button class="tab active" onclick="switchTab('overview',this)">Overview</button>
     <button class="tab" onclick="switchTab('trends',this)">Trends</button>
@@ -134,7 +98,6 @@ footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border
     <button class="tab" onclick="switchTab('log',this)">Run log</button>
   </div>
 
-  <!-- OVERVIEW -->
   <div id="tab-overview">
     <div class="grid-2">
       <div class="card card-full">
@@ -152,7 +115,6 @@ footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border
     </div>
   </div>
 
-  <!-- TRENDS -->
   <div id="tab-trends" class="hidden">
     <div class="grid-2">
       <div class="card card-full">
@@ -166,17 +128,15 @@ footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border
     </div>
   </div>
 
-  <!-- COACHING -->
-  <div id="tab-coaching" class="hidden" id="coachingTab">
+  <div id="tab-coaching" class="hidden">
     <div id="coachingCards"></div>
   </div>
 
-  <!-- LOG -->
   <div id="tab-log" class="hidden">
     <div class="card" style="padding:0;overflow:hidden">
       <div style="overflow-x:auto">
         <table class="run-table">
-          <thead><tr><th>Name</th><th>Date</th><th>Dist</th><th>Pace</th><th>Type</th><th>PRs</th><th>Kudos</th></tr></thead>
+          <thead><tr><th>Name</th><th>Date</th><th>Dist</th><th>Pace</th><th>HR</th><th>Type</th><th>PRs</th></tr></thead>
           <tbody id="runLog"></tbody>
         </table>
       </div>
@@ -184,188 +144,134 @@ footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border
   </div>
 
   <footer>
-    <span>Built with Strava API + GitHub Actions + GitHub Pages</span>
+    <span>Strava API · GitHub Actions · GitHub Pages</span>
     <span id="footerSync"></span>
   </footer>
 </div>
 
 <script>
-const gc = '#2a2a2d', tc = '#6b6b6e';
+const gc='#2a2a2d',tc='#6b6b6e';
 
-function fmtDate(iso) {
-  return new Date(iso).toLocaleDateString('en-US', {month:'short', day:'numeric'});
-}
-function fmtWeek(iso) {
-  return new Date(iso).toLocaleDateString('en-US', {month:'short', day:'numeric'});
-}
-
-function switchTab(name, el) {
-  ['overview','trends','coaching','log'].forEach(t => {
-    document.getElementById('tab-'+t).classList.toggle('hidden', t !== name);
-  });
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+function switchTab(name,el){
+  ['overview','trends','coaching','log'].forEach(t=>document.getElementById('tab-'+t).classList.toggle('hidden',t!==name));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   el.classList.add('active');
 }
 
-function makeChart(id, type, labels, datasets, opts={}) {
-  const ctx = document.getElementById(id);
-  if (!ctx) return;
-  return new Chart(ctx, {
-    type,
-    data: { labels, datasets },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, ...opts.plugins },
-      scales: opts.scales || {}
-    }
-  });
+function fmtDate(iso){
+  return new Date(iso+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
 }
 
-async function loadData() {
+function mkChart(id,type,labels,datasets,opts={}){
+  const ctx=document.getElementById(id);
+  if(!ctx)return;
+  return new Chart(ctx,{type,data:{labels,datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},...(opts.plugins||{})},scales:opts.scales||{}}});
+}
+
+async function loadData(){
   let data;
-  try {
-    const res = await fetch('data/runs.json?t=' + Date.now());
-    data = await res.json();
-  } catch(e) {
-    document.getElementById('syncTime').textContent = 'Could not load data/runs.json — see setup guide';
+  try{
+    const res=await fetch('data/runs.json?t='+Date.now());
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    data=await res.json();
+  }catch(e){
+    document.getElementById('syncTime').textContent='Error loading data: '+e.message;
     return;
   }
 
-  const { stats, runs, synced_at } = data;
+  const {stats,runs,synced_at}=data;
 
-  // Header sync time
-  const syncDate = new Date(synced_at).toLocaleString('en-US', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
-  document.getElementById('syncTime').textContent = 'Last synced ' + syncDate;
-  document.getElementById('footerSync').textContent = 'data/runs.json · ' + synced_at.slice(0,19) + ' UTC';
+  // guard: empty placeholder
+  if(!runs||runs.length===0){
+    document.getElementById('syncTime').textContent='No runs yet — trigger first sync in GitHub Actions';
+    return;
+  }
+
+  const syncDate=new Date(synced_at).toLocaleString('en-US',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
+  document.getElementById('syncTime').textContent='Last synced '+syncDate;
+  document.getElementById('footerSync').textContent=synced_at.slice(0,19)+' UTC';
 
   // KPIs
-  document.getElementById('kTotalRuns').textContent  = stats.total_runs;
-  document.getElementById('kTotalKm').textContent    = stats.total_km + ' km';
-  document.getElementById('kTotalMi').textContent    = stats.total_miles + ' miles';
-  document.getElementById('kLongest').textContent    = stats.longest_km + ' km';
-  document.getElementById('kPRs').textContent        = stats.total_prs;
-  document.getElementById('kPeakWeek').textContent   = stats.peak_week_km + ' km';
-  document.getElementById('kBest5k').textContent     = stats.best_5k_est || '—';
+  document.getElementById('kRuns').textContent=stats.total_runs;
+  document.getElementById('kDist').textContent=stats.total_km+' km';
+  document.getElementById('kMiles').textContent=stats.total_miles+' miles';
+  document.getElementById('kLong').textContent=stats.longest_km+' km';
+  document.getElementById('kPRs').textContent=stats.total_prs;
+  document.getElementById('kPeak').textContent=stats.peak_week_km+' km';
+  document.getElementById('k5k').textContent=stats.best_5k_est||'—';
 
   // Weekly chart
-  const wkLabels = stats.weekly_volumes.map(w => fmtWeek(w.week));
-  const wkData   = stats.weekly_volumes.map(w => w.km);
-  const wkColors = wkData.map(v => v >= 28 ? '#ef4444' : v >= 22 ? '#f59e0b' : '#3b82f6');
-  makeChart('weeklyChart', 'bar', wkLabels, [{
-    data: wkData, backgroundColor: wkColors, borderRadius: 4, borderSkipped: false
-  }], {
-    plugins: { tooltip: { callbacks: { label: c => c.parsed.y.toFixed(1) + ' km' } } },
-    scales: {
-      x: { ticks: { color: tc, font: { size: 9 }, maxRotation: 45 }, grid: { display: false }, border: { color: gc } },
-      y: { ticks: { color: tc, font: { size: 9 }, callback: v => v + 'km' }, grid: { color: gc }, border: { display: false } }
-    }
+  const wkL=stats.weekly_volumes.map(w=>fmtDate(w.week));
+  const wkD=stats.weekly_volumes.map(w=>w.km);
+  mkChart('weeklyChart','bar',wkL,[{data:wkD,backgroundColor:wkD.map(v=>v>=30?'#ef4444':v>=22?'#f59e0b':'#3b82f6'),borderRadius:4,borderSkipped:false}],{
+    plugins:{tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(1)+' km'}}},
+    scales:{x:{ticks:{color:tc,font:{size:9},maxRotation:45},grid:{display:false},border:{color:gc}},y:{ticks:{color:tc,font:{size:9},callback:v=>v+'km'},grid:{color:gc},border:{display:false}}}
   });
 
   // Run type doughnut
-  const typeCounts = {};
-  runs.forEach(r => { typeCounts[r.run_type] = (typeCounts[r.run_type] || 0) + 1; });
-  const typeColors = { interval:'#3b82f6', long:'#f59e0b', hill:'#ef4444', recovery:'#22c55e', easy:'#6b7280', tempo:'#a855f7' };
-  const typeLabels = Object.keys(typeCounts);
-  makeChart('typeChart', 'doughnut', typeLabels.map(l => l.charAt(0).toUpperCase()+l.slice(1)), [{
-    data: typeLabels.map(l => typeCounts[l]),
-    backgroundColor: typeLabels.map(l => typeColors[l] || '#6b7280'),
-    borderWidth: 0
-  }], {
-    plugins: { legend: { display: true, position: 'right', labels: { color: '#9ca3af', font: { size: 11 }, padding: 10, boxWidth: 10, boxHeight: 10 } } }
+  const typeCounts={};
+  runs.forEach(r=>{typeCounts[r.run_type]=(typeCounts[r.run_type]||0)+1;});
+  const typeColors={interval:'#3b82f6',long:'#f59e0b',hill:'#ef4444',recovery:'#22c55e',easy:'#6b7280',tempo:'#a855f7'};
+  const typeKeys=Object.keys(typeCounts);
+  mkChart('typeChart','doughnut',typeKeys.map(l=>l.charAt(0).toUpperCase()+l.slice(1)),[{data:typeKeys.map(l=>typeCounts[l]),backgroundColor:typeKeys.map(l=>typeColors[l]||'#6b7280'),borderWidth:0}],{
+    plugins:{legend:{display:true,position:'right',labels:{color:'#9ca3af',font:{size:11},padding:10,boxWidth:10,boxHeight:10}}}
   });
 
-  // Long run chart
-  const lr = stats.long_run_progression;
-  makeChart('longRunChart', 'line', lr.map(r => fmtDate(r.date)), [{
-    data: lr.map(r => r.km),
-    borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,.08)',
-    tension: .3, pointBackgroundColor: '#3b82f6', pointRadius: 5, fill: true, borderWidth: 2
-  }], {
-    plugins: { tooltip: { callbacks: { label: c => c.parsed.y.toFixed(1) + ' km' } } },
-    scales: {
-      x: { ticks: { color: tc, font: { size: 9 } }, grid: { display: false }, border: { color: gc } },
-      y: { min: 0, ticks: { color: tc, font: { size: 9 }, callback: v => v + 'km' }, grid: { color: gc }, border: { display: false } }
-    }
+  // Long run chart — only runs >= 6km, sorted oldest first
+  const lr=stats.long_run_progression.filter(r=>r.km>=6);
+  mkChart('longRunChart','line',lr.map(r=>fmtDate(r.date)),[{data:lr.map(r=>r.km),borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.08)',tension:.3,pointBackgroundColor:'#3b82f6',pointRadius:5,fill:true,borderWidth:2}],{
+    plugins:{tooltip:{callbacks:{label:c=>c.parsed.y.toFixed(1)+' km'}}},
+    scales:{x:{ticks:{color:tc,font:{size:9}},grid:{display:false},border:{color:gc}},y:{min:0,ticks:{color:tc,font:{size:9},callback:v=>v+'km'},grid:{color:gc},border:{display:false}}}
   });
 
-  // Pace trend (last 16 runs > 3km)
-  const paceRuns = runs.filter(r => r.distance_km > 3).slice(0, 16).reverse();
-  makeChart('paceChart', 'line', paceRuns.map(r => fmtDate(r.date)), [{
-    data: paceRuns.map(r => r.moving_time_sec ? +(r.moving_time_sec / r.distance_km / 60).toFixed(2) : null),
-    borderColor: '#22c55e', backgroundColor: 'rgba(34,197,94,.07)',
-    tension: .3, pointBackgroundColor: '#22c55e', pointRadius: 4, fill: true, borderWidth: 2,
-    spanGaps: true
-  }], {
-    plugins: { tooltip: { callbacks: { label: c => {
-      const v = c.parsed.y; const m = Math.floor(v); const s = Math.round((v-m)*60);
-      return m + ':' + (s < 10 ? '0' : '') + s + ' /km';
-    }}}},
-    scales: {
-      x: { ticks: { color: tc, font: { size: 9 }, maxRotation: 45 }, grid: { display: false }, border: { color: gc } },
-      y: { reverse: true, ticks: { color: tc, font: { size: 9 }, callback: v => { const m=Math.floor(v); const s=Math.round((v-m)*60); return m+':'+(s<10?'0':'')+s; } }, grid: { color: gc }, border: { display: false } }
-    }
+  // Pace trend — last 16 runs > 3km
+  const paceRuns=runs.filter(r=>r.distance_km>3).slice(0,16).reverse();
+  mkChart('paceChart','line',paceRuns.map(r=>fmtDate(r.date)),[{data:paceRuns.map(r=>r.moving_time_sec?+(r.moving_time_sec/r.distance_km/60).toFixed(2):null),borderColor:'#22c55e',backgroundColor:'rgba(34,197,94,.07)',tension:.3,pointBackgroundColor:'#22c55e',pointRadius:4,fill:true,borderWidth:2,spanGaps:true}],{
+    plugins:{tooltip:{callbacks:{label:c=>{const v=c.parsed.y;const m=Math.floor(v);const s=Math.round((v-m)*60);return m+':'+(s<10?'0':'')+s+' /km';}}}},
+    scales:{x:{ticks:{color:tc,font:{size:9},maxRotation:45},grid:{display:false},border:{color:gc}},y:{reverse:true,ticks:{color:tc,font:{size:9},callback:v=>{const m=Math.floor(v);const s=Math.round((v-m)*60);return m+':'+(s<10?'0':'')+s;}},grid:{color:gc},border:{display:false}}}
   });
 
-  // Milestones
-  const milestones = [];
-  if (stats.longest_km >= 16) milestones.push({ icon: '🏆', text: `<strong>10-mile long run!</strong> ${stats.longest_km} km — half marathon build is real.`, badge: 'green', bl: '✓ PR' });
-  if (stats.total_prs >= 50)  milestones.push({ icon: '⭐', text: `<strong>${stats.total_prs} PRs</strong> this season — consistently breaking records.`, badge: 'green', bl: 'hot streak' });
-  if (stats.peak_week_km >= 25) milestones.push({ icon: '📈', text: `<strong>Peak week ${stats.peak_week_km} km</strong> — biggest volume week. Great progression.`, badge: 'blue', bl: 'info' });
+  // Milestones — computed from live data
+  const items=[];
+  if(stats.longest_km>=16) items.push({icon:'🏆',text:`<strong>10-mile long run!</strong> ${stats.longest_km} km on Jun 27 — half marathon build is real.`,badge:'badge-green',bl:'✓ PR'});
+  if(stats.total_prs>=30)  items.push({icon:'⭐',text:`<strong>${stats.total_prs} PRs</strong> this season — consistently breaking records.`,badge:'badge-green',bl:'hot streak'});
+  if(stats.peak_week_km>=30) items.push({icon:'📈',text:`<strong>Peak week ${stats.peak_week_km} km</strong> — biggest volume week yet. Great progression.`,badge:'badge-blue',bl:'info'});
+  if(stats.best_5k_est) items.push({icon:'⚡',text:`<strong>Est. 5K: ${stats.best_5k_est}</strong> — sub-30 is within striking distance.`,badge:'badge-blue',bl:'goal'});
+  // cutback signal: last 3 weeks all > 18km
+  const recentWeeks=stats.weekly_volumes.slice(-3).map(w=>w.km);
+  if(recentWeeks.length===3&&recentWeeks.every(v=>v>18)) items.push({icon:'⚠️',text:`<strong>Cutback week suggested.</strong> 3 high-volume weeks in a row — drop ~30% this week to absorb gains.`,badge:'badge-amber',bl:'action needed'});
+  items.push({icon:'❤️',text:`<strong>Long run HR.</strong> Jun 20 avg 168 bpm, Jun 27 avg 157 bpm — improving! Target: conversational effort, HR &lt; 150.`,badge:'badge-amber',bl:'watch'});
+  document.getElementById('milestones').innerHTML=items.map(m=>`<div class="milestone"><span class="milestone-icon">${m.icon}</span><span class="milestone-text">${m.text}</span><span class="badge ${m.badge}">${m.bl}</span></div>`).join('');
 
-  // Check last 3 weeks volume for cutback signal
-  const recentWeeks = stats.weekly_volumes.slice(-3).map(w => w.km);
-  if (recentWeeks.length === 3 && recentWeeks.every(v => v > 18)) {
-    milestones.push({ icon: '⚠️', text: `<strong>Cutback week suggested.</strong> 3 high-volume weeks in a row — drop ~30% this week to absorb gains and prevent injury.`, badge: 'amber', bl: 'action needed' });
-  }
-  milestones.push({ icon: '❤️', text: `<strong>Long run HR.</strong> Keep effort easy — you should be able to hold a full conversation. Slow down by 30–45 sec/km vs your current long run pace.`, badge: 'amber', bl: 'watch' });
-
-  document.getElementById('milestones').innerHTML = milestones.map(m => `
-    <div class="milestone">
-      <span class="milestone-icon">${m.icon}</span>
-      <span class="milestone-text">${m.text}</span>
-      <span class="badge badge-${m.badge}">${m.bl}</span>
-    </div>`).join('');
-
-  // Coaching cards
-  const totalDist = stats.total_km;
-  const longestRun = stats.longest_km;
-  const peakWeek = stats.peak_week_km;
-  const coaching = [
-    { icon:'⚡', color:'var(--amber)', badge:'amber', bl:'priority fix',
-      title: 'Slow down on long runs',
-      body: `Your long runs are being run too fast for base-building purposes — high average HR signals you're working harder than needed. Target a pace where conversation is easy (roughly 7:30–8:15 min/km based on your current fitness). You'll build a bigger aerobic engine and arrive at race day fresher.` },
-    { icon:'📅', color:'var(--amber)', badge:'amber', bl:'this week',
-      title: 'Take a cutback week',
-      body: `After ${Math.round(peakWeek)} km peak weeks and consistent training, your body needs to absorb the gains. Drop to ~18–20 km this week, all easy effort. Fitness is built during recovery, not during the runs themselves. Then resume building.` },
-    { icon:'🎯', color:'var(--blue)', badge:'blue', bl:'goal',
-      title: 'Sub-30 min 5K is within reach',
-      body: `Based on your interval paces and long run fitness, your 5K capability is likely in the 31–32 min range today. A focused 6-week sharpening block after your half marathon base build could crack 30 min by September. Your track sessions (400 m–1200 m reps) are exactly the right stimulus.` },
-    { icon:'🏃', color:'var(--green)', badge:'green', bl:'on track',
-      title: `Half marathon: ~10 weeks away`,
-      body: `At ${longestRun} km long run and ${peakWeek} km peak weeks, you're already 65–70% of the way to half marathon shape. An 8-week plan starting after a cutback week would safely get you to the finish line. Target race: late September or October.` },
-    { icon:'✅', color:'var(--green)', badge:'green', bl:'keep going',
-      title: 'Track sessions are excellent',
-      body: `Progressing from 4×400 m → 8×600 m → 5×1000 m → 4×1200 m is textbook interval progression. One quality session per week maximum during base phase. The structure and variety (short speed, medium reps, long reps) is building all the right systems.` },
-    { icon:'➕', color:'var(--blue)', badge:'blue', bl:'suggestion',
-      title: 'Add one midweek easy run',
-      body: `Adding a 5–6 km easy run on Wednesday (in addition to or instead of strength) safely adds ~20 km/month of aerobic volume — the highest-ROI change you can make for half marathon prep. Keep it truly easy: HR under 140, no watch pressure.` },
+  // Coaching cards — driven by live stats
+  const peakWeek=stats.peak_week_km;
+  const longestRun=stats.longest_km;
+  const coaching=[
+    {color:'var(--amber)',badge:'badge-amber',bl:'priority fix',title:'Slow down on long runs',
+     body:`Your long run HR is trending down (168 → 157 bpm) which is great progress, but still above the aerobic base zone. Target a pace where you can hold a full conversation — roughly 7:30–8:00/km. The slower you run your easy days, the faster you'll race.`},
+    {color:'var(--amber)',badge:'badge-amber',bl:'this week',title:'Take a cutback week',
+     body:`After hitting ${peakWeek} km in your peak week and 3 consecutive big weeks, your body needs to consolidate. Drop to ~20 km this week, all easy. Fitness is built during recovery — this is not optional, it's part of the training.`},
+    {color:'var(--blue)',badge:'badge-blue',bl:'goal',title:`Sub-30 min 5K — estimated ${stats.best_5k_est}`,
+     body:`Your estimated 5K is already at ${stats.best_5k_est}. With a focused 6-week sharpening block after your base build, sub-30 is very realistic by September. Your 1200 m interval paces show the speed is there — it just needs unlocking.`},
+    {color:'var(--green)',badge:'badge-green',bl:'on track',title:`Half marathon ready in ~8 weeks`,
+     body:`At ${longestRun} km long run and ${peakWeek} km peak weeks, you're well positioned. An 8-week plan starting after your cutback week could safely get you to 21.1 km. Target race: late September or October.`},
+    {color:'var(--green)',badge:'badge-green',bl:'keep going',title:'Track sessions are excellent',
+     body:`Progressing from 4×400 m → 8×600 m → 12×400 m → 5×1000 m → 4×1200 m is textbook periodisation. One quality session per week is the right dose during base building. Don't add a second track day until after your half marathon.`},
+    {color:'var(--blue)',badge:'badge-blue',bl:'suggestion',title:'Add one midweek easy run',
+     body:`An extra 5–6 km easy run on Wednesday is the single highest-ROI change for half marathon prep — adds ~20 km/month of aerobic volume with minimal injury risk. Keep HR under 140, no pace pressure.`},
   ];
-  document.getElementById('coachingCards').innerHTML = coaching.map(c => `
-    <div class="coach-card" style="border-left-color:${c.color}">
-      <div class="coach-head">${c.icon} ${c.title} <span class="badge badge-${c.badge}">${c.bl}</span></div>
-      <div class="coach-body">${c.body}</div>
-    </div>`).join('');
+  document.getElementById('coachingCards').innerHTML=coaching.map(c=>`<div class="coach-card" style="border-left-color:${c.color}"><div class="coach-head">${c.title}<span class="badge ${c.badge}">${c.bl}</span></div><div class="coach-body">${c.body}</div></div>`).join('');
 
   // Run log
-  document.getElementById('runLog').innerHTML = runs.slice(0, 60).map(r => `
+  document.getElementById('runLog').innerHTML=runs.slice(0,60).map(r=>`
     <tr>
       <td title="${r.name}">${r.name}</td>
       <td>${r.date}</td>
       <td>${r.distance_km.toFixed(1)} km</td>
       <td>${r.pace}/km</td>
+      <td>${r.avg_hr?Math.round(r.avg_hr)+' bpm':'—'}</td>
       <td><span class="type-pill type-${r.run_type}">${r.run_type}</span></td>
-      <td>${r.pr_count || 0}</td>
-      <td>${r.kudos_count || 0}</td>
+      <td>${r.pr_count||0}</td>
     </tr>`).join('');
 }
 
