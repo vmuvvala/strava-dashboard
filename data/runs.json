@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-06T08:38:34.833792+00:00",
+  "synced_at": "2026-07-06T13:50:28.635160+00:00",
   "stats": {
-    "total_runs": 57,
-    "total_km": 300.8,
-    "total_miles": 186.9,
+    "total_runs": 58,
+    "total_km": 305.9,
+    "total_miles": 190.1,
     "total_prs": 37,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
@@ -76,6 +76,10 @@
       {
         "week": "2026-06-29",
         "km": 29.67
+      },
+      {
+        "week": "2026-07-06",
+        "km": 5.08
       }
     ],
     "long_run_progression": [
@@ -158,6 +162,23 @@
     ]
   },
   "runs": [
+    {
+      "id": "19201152222",
+      "name": "TAEB Monday recovery 3 m run",
+      "date": "2026-07-06",
+      "distance_km": 5.08,
+      "moving_time_sec": 2195,
+      "elapsed_time_sec": 2650,
+      "pace": "7:12",
+      "elevation_gain": 37.2,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 144.6,
+      "max_hr": 168.0,
+      "calories": 0,
+      "run_type": "recovery"
+    },
     {
       "id": "19179027248",
       "name": "TAEB weekend 6 m run",
