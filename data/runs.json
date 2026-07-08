@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-08T03:15:53.082049+00:00",
+  "synced_at": "2026-07-08T06:31:52.312441+00:00",
   "stats": {
-    "total_runs": 58,
-    "total_km": 305.9,
-    "total_miles": 190.1,
+    "total_runs": 61,
+    "total_km": 314.4,
+    "total_miles": 195.4,
     "total_prs": 37,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
@@ -79,7 +79,7 @@
       },
       {
         "week": "2026-07-06",
-        "km": 5.08
+        "km": 13.6
       }
     ],
     "long_run_progression": [
@@ -162,6 +162,57 @@
     ]
   },
   "runs": [
+    {
+      "id": "19223297205",
+      "name": "Evening Run",
+      "date": "2026-07-07",
+      "distance_km": 1.63,
+      "moving_time_sec": 670,
+      "elapsed_time_sec": 670,
+      "pace": "6:52",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 159.5,
+      "max_hr": 177.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "19223297380",
+      "name": "TAEB tracks 400,800,1200,1200,800,400 ladder with 30/60/90/90/60/30 sec break",
+      "date": "2026-07-07",
+      "distance_km": 5.13,
+      "moving_time_sec": 1907,
+      "elapsed_time_sec": 2017,
+      "pace": "6:11",
+      "elevation_gain": 4.0,
+      "pr_count": 0,
+      "achievement_count": 1,
+      "kudos_count": 6,
+      "avg_hr": 167.7,
+      "max_hr": 180.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
+    {
+      "id": "19223297573",
+      "name": "TAEB Cool down run after tracks",
+      "date": "2026-07-07",
+      "distance_km": 1.76,
+      "moving_time_sec": 959,
+      "elapsed_time_sec": 962,
+      "pace": "9:03",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 145.8,
+      "max_hr": 177.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
     {
       "id": "19201152222",
       "name": "TAEB Monday recovery 3 m run",
