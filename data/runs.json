@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-11T14:58:07.191219+00:00",
+  "synced_at": "2026-07-11T17:01:38.792534+00:00",
   "stats": {
-    "total_runs": 61,
-    "total_km": 314.4,
-    "total_miles": 195.4,
-    "total_prs": 37,
+    "total_runs": 62,
+    "total_km": 324.3,
+    "total_miles": 201.5,
+    "total_prs": 38,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
     "best_5k_est": "29:39",
@@ -79,7 +79,7 @@
       },
       {
         "week": "2026-07-06",
-        "km": 13.6
+        "km": 23.5
       }
     ],
     "long_run_progression": [
@@ -158,10 +158,31 @@
       {
         "date": "2026-07-04",
         "km": 9.68
+      },
+      {
+        "date": "2026-07-11",
+        "km": 9.9
       }
     ]
   },
   "runs": [
+    {
+      "id": "19271506015",
+      "name": "San Jose Stars and Stride  10k run",
+      "date": "2026-07-11",
+      "distance_km": 9.9,
+      "moving_time_sec": 3580,
+      "elapsed_time_sec": 3613,
+      "pace": "6:01",
+      "elevation_gain": 15.8,
+      "pr_count": 1,
+      "achievement_count": 1,
+      "kudos_count": 0,
+      "avg_hr": 174.6,
+      "max_hr": 188.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19223297205",
       "name": "Evening Run",
