@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-13T11:16:32.645197+00:00",
+  "synced_at": "2026-07-13T14:43:14.335706+00:00",
   "stats": {
-    "total_runs": 62,
-    "total_km": 324.3,
-    "total_miles": 201.5,
+    "total_runs": 63,
+    "total_km": 328.1,
+    "total_miles": 203.9,
     "total_prs": 38,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
@@ -80,6 +80,10 @@
       {
         "week": "2026-07-06",
         "km": 23.5
+      },
+      {
+        "week": "2026-07-13",
+        "km": 3.8
       }
     ],
     "long_run_progression": [
@@ -166,6 +170,23 @@
     ]
   },
   "runs": [
+    {
+      "id": "19295090447",
+      "name": "TAEB Monday morning recovery rubn",
+      "date": "2026-07-13",
+      "distance_km": 3.8,
+      "moving_time_sec": 1655,
+      "elapsed_time_sec": 2136,
+      "pace": "7:15",
+      "elevation_gain": 9.6,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 140.2,
+      "max_hr": 162.0,
+      "calories": 0,
+      "run_type": "recovery"
+    },
     {
       "id": "19271506015",
       "name": "San Jose Stars and Stride  10k run",
