@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-14T13:53:03.905009+00:00",
+  "synced_at": "2026-07-14T15:25:51.225135+00:00",
   "stats": {
-    "total_runs": 63,
-    "total_km": 328.1,
-    "total_miles": 203.9,
+    "total_runs": 64,
+    "total_km": 334.6,
+    "total_miles": 207.9,
     "total_prs": 38,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
@@ -83,7 +83,7 @@
       },
       {
         "week": "2026-07-13",
-        "km": 3.8
+        "km": 10.32
       }
     ],
     "long_run_progression": [
@@ -166,10 +166,31 @@
       {
         "date": "2026-07-11",
         "km": 9.9
+      },
+      {
+        "date": "2026-07-14",
+        "km": 6.52
       }
     ]
   },
   "runs": [
+    {
+      "id": "19310239210",
+      "name": "Morning Run",
+      "date": "2026-07-14",
+      "distance_km": 6.52,
+      "moving_time_sec": 2704,
+      "elapsed_time_sec": 3247,
+      "pace": "6:54",
+      "elevation_gain": 16.2,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 149.2,
+      "max_hr": 172.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19295090447",
       "name": "TAEB Monday morning recovery rubn",
