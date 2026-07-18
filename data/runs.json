@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-18T14:57:31.264237+00:00",
+  "synced_at": "2026-07-18T17:01:37.793486+00:00",
   "stats": {
-    "total_runs": 65,
-    "total_km": 338.0,
-    "total_miles": 210.0,
-    "total_prs": 38,
+    "total_runs": 66,
+    "total_km": 348.1,
+    "total_miles": 216.3,
+    "total_prs": 41,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
     "best_5k_est": "29:39",
@@ -83,7 +83,7 @@
       },
       {
         "week": "2026-07-13",
-        "km": 13.65
+        "km": 23.73
       }
     ],
     "long_run_progression": [
@@ -170,10 +170,31 @@
       {
         "date": "2026-07-14",
         "km": 6.52
+      },
+      {
+        "date": "2026-07-18",
+        "km": 10.08
       }
     ]
   },
   "runs": [
+    {
+      "id": "19364916989",
+      "name": "TAEB weekend 6 mile run",
+      "date": "2026-07-18",
+      "distance_km": 10.08,
+      "moving_time_sec": 3863,
+      "elapsed_time_sec": 4004,
+      "pace": "6:23",
+      "elevation_gain": 46.2,
+      "pr_count": 3,
+      "achievement_count": 7,
+      "kudos_count": 7,
+      "avg_hr": 162.5,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "19336970935",
       "name": "Morning Run",
