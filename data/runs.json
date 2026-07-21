@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-21T14:01:43.301816+00:00",
+  "synced_at": "2026-07-21T17:24:59.900111+00:00",
   "stats": {
-    "total_runs": 67,
-    "total_km": 352.1,
-    "total_miles": 218.8,
+    "total_runs": 68,
+    "total_km": 357.2,
+    "total_miles": 222.0,
     "total_prs": 41,
     "longest_km": 16.14,
     "peak_week_km": 37.6,
@@ -87,7 +87,7 @@
       },
       {
         "week": "2026-07-20",
-        "km": 4.08
+        "km": 9.16
       }
     ],
     "long_run_progression": [
@@ -182,6 +182,23 @@
     ]
   },
   "runs": [
+    {
+      "id": "19404421857",
+      "name": "Morning Run",
+      "date": "2026-07-21",
+      "distance_km": 5.08,
+      "moving_time_sec": 2109,
+      "elapsed_time_sec": 2287,
+      "pace": "6:55",
+      "elevation_gain": 3.8,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 159.5,
+      "max_hr": 180.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19393216935",
       "name": "Morning Run",
