@@ -1,11 +1,11 @@
 {
-  "synced_at": "2026-07-25T17:03:02.324975+00:00",
+  "synced_at": "2026-07-25T19:13:16.554880+00:00",
   "stats": {
-    "total_runs": 68,
-    "total_km": 357.2,
-    "total_miles": 222.0,
-    "total_prs": 41,
-    "longest_km": 16.14,
+    "total_runs": 70,
+    "total_km": 379.2,
+    "total_miles": 235.7,
+    "total_prs": 42,
+    "longest_km": 21.33,
     "peak_week_km": 37.6,
     "best_5k_est": "29:39",
     "weekly_volumes": [
@@ -87,7 +87,7 @@
       },
       {
         "week": "2026-07-20",
-        "km": 9.16
+        "km": 31.19
       }
     ],
     "long_run_progression": [
@@ -178,10 +178,48 @@
       {
         "date": "2026-07-18",
         "km": 10.08
+      },
+      {
+        "date": "2026-07-25",
+        "km": 21.33
       }
     ]
   },
   "runs": [
+    {
+      "id": "19462473027",
+      "name": "Morning Run",
+      "date": "2026-07-25",
+      "distance_km": 0.7,
+      "moving_time_sec": 294,
+      "elapsed_time_sec": 381,
+      "pace": "7:02",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 154.9,
+      "max_hr": 165.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "19462473215",
+      "name": "Morning Run",
+      "date": "2026-07-25",
+      "distance_km": 21.33,
+      "moving_time_sec": 9095,
+      "elapsed_time_sec": 9624,
+      "pace": "7:06",
+      "elevation_gain": 69.2,
+      "pr_count": 1,
+      "achievement_count": 6,
+      "kudos_count": 2,
+      "avg_hr": 154.9,
+      "max_hr": 172.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "19404421857",
       "name": "Morning Run",
@@ -210,7 +248,7 @@
       "elevation_gain": 10.6,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 5,
+      "kudos_count": 6,
       "avg_hr": 140.9,
       "max_hr": 158.0,
       "calories": 0,
