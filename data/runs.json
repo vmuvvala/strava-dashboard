@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-07-27T11:28:58.347832+00:00",
+  "synced_at": "2026-07-27T14:44:46.162405+00:00",
   "stats": {
-    "total_runs": 70,
-    "total_km": 379.2,
-    "total_miles": 235.7,
+    "total_runs": 71,
+    "total_km": 384.4,
+    "total_miles": 238.8,
     "total_prs": 42,
     "longest_km": 21.33,
     "peak_week_km": 37.6,
@@ -88,6 +88,10 @@
       {
         "week": "2026-07-20",
         "km": 31.19
+      },
+      {
+        "week": "2026-07-27",
+        "km": 5.11
       }
     ],
     "long_run_progression": [
@@ -186,6 +190,23 @@
     ]
   },
   "runs": [
+    {
+      "id": "19485083243",
+      "name": "Monday 3 m recovery run",
+      "date": "2026-07-27",
+      "distance_km": 5.11,
+      "moving_time_sec": 2289,
+      "elapsed_time_sec": 2572,
+      "pace": "7:28",
+      "elevation_gain": 4.4,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 140.8,
+      "max_hr": 164.0,
+      "calories": 0,
+      "run_type": "recovery"
+    },
     {
       "id": "19462473027",
       "name": "Morning Run",
