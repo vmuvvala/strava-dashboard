@@ -1,13 +1,13 @@
 {
-  "synced_at": "2026-07-29T02:55:12.584506+00:00",
+  "synced_at": "2026-07-29T06:34:58.930585+00:00",
   "stats": {
-    "total_runs": 71,
-    "total_km": 384.4,
-    "total_miles": 238.8,
+    "total_runs": 74,
+    "total_km": 392.8,
+    "total_miles": 244.1,
     "total_prs": 42,
     "longest_km": 21.33,
     "peak_week_km": 37.6,
-    "best_5k_est": "29:39",
+    "best_5k_est": "28:36",
     "weekly_volumes": [
       {
         "week": "2026-01-05",
@@ -91,7 +91,7 @@
       },
       {
         "week": "2026-07-27",
-        "km": 5.11
+        "km": 13.59
       }
     ],
     "long_run_progression": [
@@ -190,6 +190,57 @@
     ]
   },
   "runs": [
+    {
+      "id": "19509487691",
+      "name": "Evening Run",
+      "date": "2026-07-28",
+      "distance_km": 1.64,
+      "moving_time_sec": 665,
+      "elapsed_time_sec": 665,
+      "pace": "6:46",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 6,
+      "avg_hr": 146.1,
+      "max_hr": 154.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "19509208786",
+      "name": "TAEB  tracks 400 m x 12 with 45 sec break",
+      "date": "2026-07-28",
+      "distance_km": 5.32,
+      "moving_time_sec": 1826,
+      "elapsed_time_sec": 2039,
+      "pace": "5:43",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 1,
+      "kudos_count": 10,
+      "avg_hr": 161.1,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
+    {
+      "id": "19509487752",
+      "name": "Post tracks cool down run",
+      "date": "2026-07-28",
+      "distance_km": 1.52,
+      "moving_time_sec": 849,
+      "elapsed_time_sec": 864,
+      "pace": "9:17",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 5,
+      "avg_hr": 145.9,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
     {
       "id": "19485083243",
       "name": "Monday 3 m recovery run",
