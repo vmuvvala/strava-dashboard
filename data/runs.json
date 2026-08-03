@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-03T11:29:22.326763+00:00",
+  "synced_at": "2026-08-03T14:47:33.726471+00:00",
   "stats": {
-    "total_runs": 76,
-    "total_km": 415.6,
-    "total_miles": 258.3,
+    "total_runs": 77,
+    "total_km": 422.1,
+    "total_miles": 262.3,
     "total_prs": 43,
     "longest_km": 21.33,
     "peak_week_km": 37.6,
@@ -92,6 +92,10 @@
       {
         "week": "2026-07-27",
         "km": 36.37
+      },
+      {
+        "week": "2026-08-03",
+        "km": 6.46
       }
     ],
     "long_run_progression": [
@@ -190,10 +194,31 @@
       {
         "date": "2026-08-01",
         "km": 17.72
+      },
+      {
+        "date": "2026-08-03",
+        "km": 6.46
       }
     ]
   },
   "runs": [
+    {
+      "id": "19583303199",
+      "name": "TAEB Monday morning run",
+      "date": "2026-08-03",
+      "distance_km": 6.46,
+      "moving_time_sec": 2598,
+      "elapsed_time_sec": 3098,
+      "pace": "6:41",
+      "elevation_gain": 11.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 160.9,
+      "max_hr": 185.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19558956511",
       "name": "TAEB Saturday 11 mile run",
@@ -205,7 +230,7 @@
       "elevation_gain": 52.4,
       "pr_count": 1,
       "achievement_count": 9,
-      "kudos_count": 16,
+      "kudos_count": 17,
       "avg_hr": 157.4,
       "max_hr": 171.0,
       "calories": 0,
