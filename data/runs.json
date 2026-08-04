@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-04T10:43:20.316092+00:00",
+  "synced_at": "2026-08-04T14:24:45.741387+00:00",
   "stats": {
-    "total_runs": 77,
-    "total_km": 422.1,
-    "total_miles": 262.3,
+    "total_runs": 79,
+    "total_km": 428.9,
+    "total_miles": 266.5,
     "total_prs": 43,
     "longest_km": 21.33,
     "peak_week_km": 37.6,
@@ -95,7 +95,7 @@
       },
       {
         "week": "2026-08-03",
-        "km": 6.46
+        "km": 13.27
       }
     ],
     "long_run_progression": [
@@ -202,6 +202,40 @@
     ]
   },
   "runs": [
+    {
+      "id": "19597747388",
+      "name": "Morning Run",
+      "date": "2026-08-04",
+      "distance_km": 1.64,
+      "moving_time_sec": 651,
+      "elapsed_time_sec": 825,
+      "pace": "6:37",
+      "elevation_gain": 4.8,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 147.1,
+      "max_hr": 175.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "19597747773",
+      "name": "Morning Run",
+      "date": "2026-08-04",
+      "distance_km": 5.17,
+      "moving_time_sec": 1854,
+      "elapsed_time_sec": 1956,
+      "pace": "5:58",
+      "elevation_gain": 3.2,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 162.2,
+      "max_hr": 179.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19583303199",
       "name": "TAEB Monday morning run",
