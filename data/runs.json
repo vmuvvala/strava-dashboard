@@ -1,12 +1,12 @@
 {
-  "synced_at": "2026-08-08T16:37:43.066710+00:00",
+  "synced_at": "2026-08-08T18:42:04.262361+00:00",
   "stats": {
-    "total_runs": 80,
-    "total_km": 430.5,
-    "total_miles": 267.5,
-    "total_prs": 43,
-    "longest_km": 21.33,
-    "peak_week_km": 37.6,
+    "total_runs": 81,
+    "total_km": 454.7,
+    "total_miles": 282.5,
+    "total_prs": 47,
+    "longest_km": 24.16,
+    "peak_week_km": 39.0,
     "best_5k_est": "28:36",
     "weekly_volumes": [
       {
@@ -95,7 +95,7 @@
       },
       {
         "week": "2026-08-03",
-        "km": 14.89
+        "km": 39.05
       }
     ],
     "long_run_progression": [
@@ -198,10 +198,31 @@
       {
         "date": "2026-08-03",
         "km": 6.46
+      },
+      {
+        "date": "2026-08-08",
+        "km": 24.16
       }
     ]
   },
   "runs": [
+    {
+      "id": "19657930496",
+      "name": "TAEB weekend 15 mile long run",
+      "date": "2026-08-08",
+      "distance_km": 24.16,
+      "moving_time_sec": 9996,
+      "elapsed_time_sec": 10483,
+      "pace": "6:53",
+      "elevation_gain": 98.2,
+      "pr_count": 4,
+      "achievement_count": 22,
+      "kudos_count": 8,
+      "avg_hr": 160.2,
+      "max_hr": 183.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "19597747388",
       "name": "TAEB warm up run",
