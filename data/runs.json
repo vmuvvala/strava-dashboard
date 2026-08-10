@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-10T16:56:56.012018+00:00",
+  "synced_at": "2026-08-10T19:02:00.009827+00:00",
   "stats": {
-    "total_runs": 81,
-    "total_km": 454.7,
-    "total_miles": 282.5,
+    "total_runs": 82,
+    "total_km": 461.1,
+    "total_miles": 286.5,
     "total_prs": 47,
     "longest_km": 24.16,
     "peak_week_km": 39.0,
@@ -96,6 +96,10 @@
       {
         "week": "2026-08-03",
         "km": 39.05
+      },
+      {
+        "week": "2026-08-10",
+        "km": 6.46
       }
     ],
     "long_run_progression": [
@@ -202,10 +206,31 @@
       {
         "date": "2026-08-08",
         "km": 24.16
+      },
+      {
+        "date": "2026-08-10",
+        "km": 6.46
       }
     ]
   },
   "runs": [
+    {
+      "id": "19685354953",
+      "name": "TAEB Monday morning run",
+      "date": "2026-08-10",
+      "distance_km": 6.46,
+      "moving_time_sec": 2746,
+      "elapsed_time_sec": 3195,
+      "pace": "7:04",
+      "elevation_gain": 22.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 148.0,
+      "max_hr": 164.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19657930496",
       "name": "TAEB weekend 15 mile long run",
