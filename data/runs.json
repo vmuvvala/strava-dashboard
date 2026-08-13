@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-13T15:01:08.937657+00:00",
+  "synced_at": "2026-08-13T16:59:20.593788+00:00",
   "stats": {
-    "total_runs": 84,
-    "total_km": 468.2,
-    "total_miles": 290.9,
+    "total_runs": 85,
+    "total_km": 474.6,
+    "total_miles": 294.9,
     "total_prs": 47,
     "longest_km": 24.16,
     "peak_week_km": 39.0,
@@ -99,7 +99,7 @@
       },
       {
         "week": "2026-08-10",
-        "km": 13.5
+        "km": 19.96
       }
     ],
     "long_run_progression": [
@@ -210,10 +210,31 @@
       {
         "date": "2026-08-10",
         "km": 6.46
+      },
+      {
+        "date": "2026-08-13",
+        "km": 6.46
       }
     ]
   },
   "runs": [
+    {
+      "id": "19726932811",
+      "name": "TAEB Thursday Fartlek run",
+      "date": "2026-08-13",
+      "distance_km": 6.46,
+      "moving_time_sec": 2647,
+      "elapsed_time_sec": 3525,
+      "pace": "6:49",
+      "elevation_gain": 21.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 2,
+      "avg_hr": 161.9,
+      "max_hr": 185.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19696588570",
       "name": "Morning Run",
