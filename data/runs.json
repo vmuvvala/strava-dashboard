@@ -1,12 +1,12 @@
 {
-  "synced_at": "2026-08-15T18:34:43.929563+00:00",
+  "synced_at": "2026-08-15T20:26:41.595067+00:00",
   "stats": {
-    "total_runs": 85,
-    "total_km": 474.6,
-    "total_miles": 294.9,
-    "total_prs": 47,
-    "longest_km": 24.16,
-    "peak_week_km": 39.0,
+    "total_runs": 86,
+    "total_km": 502.0,
+    "total_miles": 311.9,
+    "total_prs": 49,
+    "longest_km": 27.37,
+    "peak_week_km": 47.3,
     "best_5k_est": "28:36",
     "weekly_volumes": [
       {
@@ -99,7 +99,7 @@
       },
       {
         "week": "2026-08-10",
-        "km": 19.96
+        "km": 47.33
       }
     ],
     "long_run_progression": [
@@ -214,10 +214,31 @@
       {
         "date": "2026-08-13",
         "km": 6.46
+      },
+      {
+        "date": "2026-08-15",
+        "km": 27.37
       }
     ]
   },
   "runs": [
+    {
+      "id": "19756700824",
+      "name": "TAEB weekend 17 mile long run",
+      "date": "2026-08-15",
+      "distance_km": 27.37,
+      "moving_time_sec": 11472,
+      "elapsed_time_sec": 12020,
+      "pace": "6:59",
+      "elevation_gain": 107.8,
+      "pr_count": 2,
+      "achievement_count": 8,
+      "kudos_count": 5,
+      "avg_hr": 162.6,
+      "max_hr": 185.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "19726932811",
       "name": "TAEB Thursday Fartlek run",
