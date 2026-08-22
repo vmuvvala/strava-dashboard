@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-22T16:28:30.905062+00:00",
+  "synced_at": "2026-08-22T18:35:34.954336+00:00",
   "stats": {
-    "total_runs": 88,
-    "total_km": 518.1,
-    "total_miles": 321.9,
+    "total_runs": 89,
+    "total_km": 537.5,
+    "total_miles": 334.0,
     "total_prs": 49,
     "longest_km": 27.37,
     "peak_week_km": 47.3,
@@ -103,7 +103,7 @@
       },
       {
         "week": "2026-08-17",
-        "km": 16.12
+        "km": 35.46
       }
     ],
     "long_run_progression": [
@@ -230,10 +230,31 @@
       {
         "date": "2026-08-20",
         "km": 8.06
+      },
+      {
+        "date": "2026-08-22",
+        "km": 19.34
       }
     ]
   },
   "runs": [
+    {
+      "id": "19854868931",
+      "name": "TAEB Saturday 12 mile long run",
+      "date": "2026-08-22",
+      "distance_km": 19.34,
+      "moving_time_sec": 8242,
+      "elapsed_time_sec": 9053,
+      "pace": "7:06",
+      "elevation_gain": 81.2,
+      "pr_count": 0,
+      "achievement_count": 1,
+      "kudos_count": 0,
+      "avg_hr": 153.0,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "19824794306",
       "name": "TAEB Thursday run",
