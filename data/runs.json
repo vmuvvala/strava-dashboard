@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-26T03:08:37.738121+00:00",
+  "synced_at": "2026-08-26T04:43:12.805312+00:00",
   "stats": {
-    "total_runs": 90,
-    "total_km": 547.1,
-    "total_miles": 340.0,
+    "total_runs": 93,
+    "total_km": 556.8,
+    "total_miles": 346.0,
     "total_prs": 49,
     "longest_km": 27.37,
     "peak_week_km": 47.3,
@@ -107,7 +107,7 @@
       },
       {
         "week": "2026-08-24",
-        "km": 9.68
+        "km": 19.31
       }
     ],
     "long_run_progression": [
@@ -242,10 +242,65 @@
       {
         "date": "2026-08-24",
         "km": 9.68
+      },
+      {
+        "date": "2026-08-25",
+        "km": 6.37
       }
     ]
   },
   "runs": [
+    {
+      "id": "19902741049",
+      "name": "TAEB warm up run before tracks",
+      "date": "2026-08-25",
+      "distance_km": 1.64,
+      "moving_time_sec": 728,
+      "elapsed_time_sec": 731,
+      "pace": "7:22",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 149.5,
+      "max_hr": 166.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
+    {
+      "id": "19902740999",
+      "name": "TAEB Tuesday 1200 m x 5 with 90 sec break",
+      "date": "2026-08-25",
+      "distance_km": 6.37,
+      "moving_time_sec": 2394,
+      "elapsed_time_sec": 2541,
+      "pace": "6:15",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 158.6,
+      "max_hr": 170.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
+    {
+      "id": "19902740943",
+      "name": "TAEB cool down after tracks run",
+      "date": "2026-08-25",
+      "distance_km": 1.62,
+      "moving_time_sec": 986,
+      "elapsed_time_sec": 1019,
+      "pace": "10:10",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 148.5,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
     {
       "id": "19879441160",
       "name": "TAEB Monday morning run",
