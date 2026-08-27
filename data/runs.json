@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-08-27T08:23:32.144122+00:00",
+  "synced_at": "2026-08-27T20:12:58.856546+00:00",
   "stats": {
-    "total_runs": 93,
-    "total_km": 556.8,
-    "total_miles": 346.0,
+    "total_runs": 94,
+    "total_km": 566.5,
+    "total_miles": 352.0,
     "total_prs": 49,
     "longest_km": 27.37,
     "peak_week_km": 47.3,
@@ -107,7 +107,7 @@
       },
       {
         "week": "2026-08-24",
-        "km": 19.31
+        "km": 29.0
       }
     ],
     "long_run_progression": [
@@ -246,10 +246,31 @@
       {
         "date": "2026-08-25",
         "km": 6.37
+      },
+      {
+        "date": "2026-08-27",
+        "km": 9.69
       }
     ]
   },
   "runs": [
+    {
+      "id": "19924193382",
+      "name": "TAEB Thursday 10 m + 1:1 fartlake + regular run",
+      "date": "2026-08-27",
+      "distance_km": 9.69,
+      "moving_time_sec": 3919,
+      "elapsed_time_sec": 4836,
+      "pace": "6:44",
+      "elevation_gain": 20.8,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 2,
+      "avg_hr": 156.6,
+      "max_hr": 184.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19902741049",
       "name": "TAEB warm up run before tracks",
