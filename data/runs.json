@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-28T06:01:06.280929+00:00",
+  "synced_at": "2026-08-28T20:04:59.721666+00:00",
   "stats": {
     "total_runs": 94,
     "total_km": 566.5,
@@ -256,7 +256,7 @@
   "runs": [
     {
       "id": "19924193382",
-      "name": "TAEB Thursday 10 m + 1:1 fartlake + regular run",
+      "name": "TAEB Thursday 10 min  + 1:1 min * 10 rep fartlake + regular run",
       "date": "2026-08-27",
       "distance_km": 9.69,
       "moving_time_sec": 3919,
@@ -265,7 +265,7 @@
       "elevation_gain": 20.8,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 4,
+      "kudos_count": 5,
       "avg_hr": 156.6,
       "max_hr": 184.0,
       "calories": 0,
