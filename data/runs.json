@@ -1,12 +1,12 @@
 {
-  "synced_at": "2026-08-29T16:27:47.419656+00:00",
+  "synced_at": "2026-08-29T20:41:20.254739+00:00",
   "stats": {
-    "total_runs": 94,
-    "total_km": 566.5,
-    "total_miles": 352.0,
-    "total_prs": 49,
-    "longest_km": 27.37,
-    "peak_week_km": 47.3,
+    "total_runs": 95,
+    "total_km": 597.1,
+    "total_miles": 371.0,
+    "total_prs": 51,
+    "longest_km": 30.61,
+    "peak_week_km": 59.6,
     "best_5k_est": "28:36",
     "weekly_volumes": [
       {
@@ -107,7 +107,7 @@
       },
       {
         "week": "2026-08-24",
-        "km": 29.0
+        "km": 59.61
       }
     ],
     "long_run_progression": [
@@ -250,10 +250,31 @@
       {
         "date": "2026-08-27",
         "km": 9.69
+      },
+      {
+        "date": "2026-08-29",
+        "km": 30.61
       }
     ]
   },
   "runs": [
+    {
+      "id": "19953369698",
+      "name": "TAEB Saturday 19mile long run",
+      "date": "2026-08-29",
+      "distance_km": 30.61,
+      "moving_time_sec": 13281,
+      "elapsed_time_sec": 13910,
+      "pace": "7:13",
+      "elevation_gain": 115.4,
+      "pr_count": 2,
+      "achievement_count": 10,
+      "kudos_count": 12,
+      "avg_hr": 159.5,
+      "max_hr": 181.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "19924193382",
       "name": "TAEB Thursday 10 min  + 1:1 min * 10 rep fartlake + regular run",
@@ -265,7 +286,7 @@
       "elevation_gain": 20.8,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 6,
+      "kudos_count": 7,
       "avg_hr": 156.6,
       "max_hr": 184.0,
       "calories": 0,
