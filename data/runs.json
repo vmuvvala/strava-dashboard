@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-03T14:15:26.989004+00:00",
+  "synced_at": "2026-09-03T19:11:38.070682+00:00",
   "stats": {
     "total_runs": 97,
     "total_km": 613.2,
@@ -272,7 +272,7 @@
   "runs": [
     {
       "id": "20016005063",
-      "name": "Miening run at Southampton, UK",
+      "name": "Morning  run at Southampton, UK",
       "date": "2026-09-03",
       "distance_km": 6.45,
       "moving_time_sec": 2975,
@@ -281,7 +281,7 @@
       "elevation_gain": 37.6,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 2,
+      "kudos_count": 11,
       "avg_hr": 142.1,
       "max_hr": 155.0,
       "calories": 0,
