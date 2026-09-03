@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-03T03:42:02.056158+00:00",
+  "synced_at": "2026-09-03T08:44:37.980416+00:00",
   "stats": {
-    "total_runs": 96,
-    "total_km": 606.8,
-    "total_miles": 377.0,
+    "total_runs": 97,
+    "total_km": 613.2,
+    "total_miles": 381.0,
     "total_prs": 51,
     "longest_km": 30.61,
     "peak_week_km": 59.6,
@@ -111,7 +111,7 @@
       },
       {
         "week": "2026-08-31",
-        "km": 9.69
+        "km": 16.14
       }
     ],
     "long_run_progression": [
@@ -262,10 +262,31 @@
       {
         "date": "2026-08-31",
         "km": 9.69
+      },
+      {
+        "date": "2026-09-03",
+        "km": 6.45
       }
     ]
   },
   "runs": [
+    {
+      "id": "20016005063",
+      "name": "Miening run at Southampton, UK",
+      "date": "2026-09-03",
+      "distance_km": 6.45,
+      "moving_time_sec": 2975,
+      "elapsed_time_sec": 3158,
+      "pace": "7:41",
+      "elevation_gain": 37.6,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 142.1,
+      "max_hr": 155.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "19978675711",
       "name": "TAEB Monday morning run",
