@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-09-06T13:28:30.078897+00:00",
+  "synced_at": "2026-09-06T16:46:45.911244+00:00",
   "stats": {
-    "total_runs": 97,
-    "total_km": 613.2,
-    "total_miles": 381.0,
-    "total_prs": 51,
+    "total_runs": 98,
+    "total_km": 632.5,
+    "total_miles": 393.0,
+    "total_prs": 57,
     "longest_km": 30.61,
     "peak_week_km": 59.6,
     "best_5k_est": "28:36",
@@ -111,7 +111,7 @@
       },
       {
         "week": "2026-08-31",
-        "km": 16.14
+        "km": 35.47
       }
     ],
     "long_run_progression": [
@@ -266,10 +266,31 @@
       {
         "date": "2026-09-03",
         "km": 6.45
+      },
+      {
+        "date": "2026-09-06",
+        "km": 19.33
       }
     ]
   },
   "runs": [
+    {
+      "id": "20064120427",
+      "name": "TAEB weekend run",
+      "date": "2026-09-06",
+      "distance_km": 19.33,
+      "moving_time_sec": 8221,
+      "elapsed_time_sec": 8360,
+      "pace": "7:05",
+      "elevation_gain": 50.8,
+      "pr_count": 6,
+      "achievement_count": 11,
+      "kudos_count": 0,
+      "avg_hr": 158.2,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "20016005063",
       "name": "Morning  run at Southampton, UK",
