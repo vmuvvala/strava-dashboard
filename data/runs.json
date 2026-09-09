@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-08T22:28:10.377860+00:00",
+  "synced_at": "2026-09-09T03:54:30.681990+00:00",
   "stats": {
-    "total_runs": 98,
-    "total_km": 632.5,
-    "total_miles": 393.0,
+    "total_runs": 101,
+    "total_km": 642.5,
+    "total_miles": 399.2,
     "total_prs": 57,
     "longest_km": 30.61,
     "peak_week_km": 59.6,
@@ -112,6 +112,10 @@
       {
         "week": "2026-08-31",
         "km": 35.47
+      },
+      {
+        "week": "2026-09-07",
+        "km": 9.95
       }
     ],
     "long_run_progression": [
@@ -270,10 +274,65 @@
       {
         "date": "2026-09-06",
         "km": 19.33
+      },
+      {
+        "date": "2026-09-08",
+        "km": 6.7
       }
     ]
   },
   "runs": [
+    {
+      "id": "20097427864",
+      "name": "Evening Run",
+      "date": "2026-09-08",
+      "distance_km": 1.62,
+      "moving_time_sec": 703,
+      "elapsed_time_sec": 706,
+      "pace": "7:12",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 139.1,
+      "max_hr": 148.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "20097428128",
+      "name": "TAEB 1 m  x 4 with 2 min break tracks run",
+      "date": "2026-09-08",
+      "distance_km": 6.7,
+      "moving_time_sec": 2565,
+      "elapsed_time_sec": 2725,
+      "pace": "6:22",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 4,
+      "avg_hr": 157.3,
+      "max_hr": 170.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
+    {
+      "id": "20097427660",
+      "name": "Cool down run after tracks",
+      "date": "2026-09-08",
+      "distance_km": 1.63,
+      "moving_time_sec": 807,
+      "elapsed_time_sec": 807,
+      "pace": "8:16",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 149.5,
+      "max_hr": 155.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
     {
       "id": "20064120427",
       "name": "TAEB weekend run",
