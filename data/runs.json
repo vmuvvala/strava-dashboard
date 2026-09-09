@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-09T03:54:30.681990+00:00",
+  "synced_at": "2026-09-09T08:50:16.712843+00:00",
   "stats": {
     "total_runs": 101,
     "total_km": 642.5,
@@ -293,7 +293,7 @@
       "elevation_gain": 0.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 3,
+      "kudos_count": 4,
       "avg_hr": 139.1,
       "max_hr": 148.0,
       "calories": 0,
@@ -310,7 +310,7 @@
       "elevation_gain": 0.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 4,
+      "kudos_count": 10,
       "avg_hr": 157.3,
       "max_hr": 170.0,
       "calories": 0,
@@ -318,7 +318,7 @@
     },
     {
       "id": "20097427660",
-      "name": "Cool down run after tracks",
+      "name": "TAEB Cool down run after tracks",
       "date": "2026-09-08",
       "distance_km": 1.63,
       "moving_time_sec": 807,
@@ -327,7 +327,7 @@
       "elevation_gain": 0.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 3,
+      "kudos_count": 5,
       "avg_hr": 149.5,
       "max_hr": 155.0,
       "calories": 0,
