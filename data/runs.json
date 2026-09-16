@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-16T00:03:02.139072+00:00",
+  "synced_at": "2026-09-16T07:25:56.846164+00:00",
   "stats": {
-    "total_runs": 104,
-    "total_km": 681.2,
-    "total_miles": 423.3,
+    "total_runs": 107,
+    "total_km": 691.4,
+    "total_miles": 429.6,
     "total_prs": 58,
     "longest_km": 30.61,
     "peak_week_km": 59.6,
@@ -119,7 +119,7 @@
       },
       {
         "week": "2026-09-14",
-        "km": 9.67
+        "km": 19.9
       }
     ],
     "long_run_progression": [
@@ -294,10 +294,65 @@
       {
         "date": "2026-09-14",
         "km": 9.67
+      },
+      {
+        "date": "2026-09-15",
+        "km": 6.98
       }
     ]
   },
   "runs": [
+    {
+      "id": "20194642225",
+      "name": "Evening Run",
+      "date": "2026-09-15",
+      "distance_km": 1.63,
+      "moving_time_sec": 684,
+      "elapsed_time_sec": 731,
+      "pace": "6:59",
+      "elevation_gain": 5.2,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 121.7,
+      "max_hr": 151.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "20194631631",
+      "name": "TAEB track run 800m x 8 with 90 sec break",
+      "date": "2026-09-15",
+      "distance_km": 6.98,
+      "moving_time_sec": 2569,
+      "elapsed_time_sec": 2831,
+      "pace": "6:08",
+      "elevation_gain": 2.2,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 4,
+      "avg_hr": 161.4,
+      "max_hr": 175.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
+    {
+      "id": "20194642296",
+      "name": "TAEB cool down run",
+      "date": "2026-09-15",
+      "distance_km": 1.62,
+      "moving_time_sec": 707,
+      "elapsed_time_sec": 711,
+      "pace": "7:16",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 2,
+      "avg_hr": 165.5,
+      "max_hr": 174.0,
+      "calories": 0,
+      "run_type": "recovery"
+    },
     {
       "id": "20171745431",
       "name": "Morning Run",
