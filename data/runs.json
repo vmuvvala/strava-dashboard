@@ -1,11 +1,11 @@
 {
-  "synced_at": "2026-09-19T22:14:22.635827+00:00",
+  "synced_at": "2026-09-20T04:11:16.116039+00:00",
   "stats": {
-    "total_runs": 107,
-    "total_km": 691.4,
-    "total_miles": 429.6,
+    "total_runs": 108,
+    "total_km": 726.9,
+    "total_miles": 451.7,
     "total_prs": 58,
-    "longest_km": 30.61,
+    "longest_km": 35.51,
     "peak_week_km": 59.6,
     "best_5k_est": "28:36",
     "weekly_volumes": [
@@ -119,7 +119,7 @@
       },
       {
         "week": "2026-09-14",
-        "km": 19.9
+        "km": 55.41
       }
     ],
     "long_run_progression": [
@@ -298,10 +298,31 @@
       {
         "date": "2026-09-15",
         "km": 6.98
+      },
+      {
+        "date": "2026-09-19",
+        "km": 35.51
       }
     ]
   },
   "runs": [
+    {
+      "id": "20247315643",
+      "name": "TAEB weekend 22 mile long run",
+      "date": "2026-09-19",
+      "distance_km": 35.51,
+      "moving_time_sec": 16026,
+      "elapsed_time_sec": 17815,
+      "pace": "7:31",
+      "elevation_gain": 676.2,
+      "pr_count": 0,
+      "achievement_count": 3,
+      "kudos_count": 13,
+      "avg_hr": 159.0,
+      "max_hr": 182.0,
+      "calories": 0,
+      "run_type": "long"
+    },
     {
       "id": "20194642225",
       "name": "Evening Run",
