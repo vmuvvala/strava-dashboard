@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-21T12:23:23.903803+00:00",
+  "synced_at": "2026-09-21T19:09:14.943137+00:00",
   "stats": {
-    "total_runs": 108,
-    "total_km": 726.9,
-    "total_miles": 451.7,
+    "total_runs": 109,
+    "total_km": 735.0,
+    "total_miles": 456.7,
     "total_prs": 58,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -120,6 +120,10 @@
       {
         "week": "2026-09-14",
         "km": 55.41
+      },
+      {
+        "week": "2026-09-21",
+        "km": 8.05
       }
     ],
     "long_run_progression": [
@@ -302,10 +306,31 @@
       {
         "date": "2026-09-19",
         "km": 35.51
+      },
+      {
+        "date": "2026-09-21",
+        "km": 8.05
       }
     ]
   },
   "runs": [
+    {
+      "id": "20271198851",
+      "name": "TAEB Monday morning run",
+      "date": "2026-09-21",
+      "distance_km": 8.05,
+      "moving_time_sec": 3599,
+      "elapsed_time_sec": 4059,
+      "pace": "7:26",
+      "elevation_gain": 0.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": null,
+      "max_hr": null,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "20247315643",
       "name": "TAEB weekend 22 mile long run",
