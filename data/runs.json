@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-21T23:04:24.370074+00:00",
+  "synced_at": "2026-09-22T04:05:26.027037+00:00",
   "stats": {
     "total_runs": 109,
     "total_km": 735.0,
@@ -325,7 +325,7 @@
       "elevation_gain": 0.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 3,
+      "kudos_count": 10,
       "avg_hr": null,
       "max_hr": null,
       "calories": 0,
@@ -342,7 +342,7 @@
       "elevation_gain": 676.2,
       "pr_count": 0,
       "achievement_count": 3,
-      "kudos_count": 17,
+      "kudos_count": 18,
       "avg_hr": 159.0,
       "max_hr": 182.0,
       "calories": 0,
