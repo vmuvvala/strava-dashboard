@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-24T19:53:14.565370+00:00",
+  "synced_at": "2026-09-24T23:06:03.578726+00:00",
   "stats": {
-    "total_runs": 112,
-    "total_km": 743.3,
-    "total_miles": 461.9,
+    "total_runs": 113,
+    "total_km": 749.8,
+    "total_miles": 465.9,
     "total_prs": 58,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -123,7 +123,7 @@
       },
       {
         "week": "2026-09-21",
-        "km": 16.4
+        "km": 22.85
       }
     ],
     "long_run_progression": [
@@ -310,10 +310,31 @@
       {
         "date": "2026-09-21",
         "km": 8.05
+      },
+      {
+        "date": "2026-09-24",
+        "km": 6.45
       }
     ]
   },
   "runs": [
+    {
+      "id": "20316327175",
+      "name": "TAEB morning run",
+      "date": "2026-09-24",
+      "distance_km": 6.45,
+      "moving_time_sec": 2953,
+      "elapsed_time_sec": 3369,
+      "pace": "7:37",
+      "elevation_gain": 16.6,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 2,
+      "avg_hr": 142.3,
+      "max_hr": 168.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "20291033018",
       "name": "TAEB warm up run before tracks",
