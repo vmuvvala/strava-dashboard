@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-28T13:20:27.385612+00:00",
+  "synced_at": "2026-09-28T20:25:56.664926+00:00",
   "stats": {
-    "total_runs": 114,
-    "total_km": 769.1,
-    "total_miles": 477.9,
+    "total_runs": 115,
+    "total_km": 774.2,
+    "total_miles": 481.1,
     "total_prs": 76,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -124,6 +124,10 @@
       {
         "week": "2026-09-21",
         "km": 42.19
+      },
+      {
+        "week": "2026-09-28",
+        "km": 5.11
       }
     ],
     "long_run_progression": [
@@ -323,6 +327,23 @@
   },
   "runs": [
     {
+      "id": "20368426311",
+      "name": "TAEB Monday morning run",
+      "date": "2026-09-28",
+      "distance_km": 5.11,
+      "moving_time_sec": 2287,
+      "elapsed_time_sec": 2323,
+      "pace": "7:27",
+      "elevation_gain": 25.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 148.6,
+      "max_hr": 173.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
       "id": "20340861842",
       "name": "TAEB Saturday 12 mile run",
       "date": "2026-09-26",
@@ -384,7 +405,7 @@
       "elevation_gain": 0.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 11,
+      "kudos_count": 12,
       "avg_hr": 166.9,
       "max_hr": 182.0,
       "calories": 0,
