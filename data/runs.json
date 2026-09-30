@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-09-29T22:02:11.989451+00:00",
+  "synced_at": "2026-09-30T04:48:38.438903+00:00",
   "stats": {
-    "total_runs": 115,
-    "total_km": 774.2,
-    "total_miles": 481.1,
+    "total_runs": 117,
+    "total_km": 779.4,
+    "total_miles": 484.3,
     "total_prs": 76,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -127,7 +127,7 @@
       },
       {
         "week": "2026-09-28",
-        "km": 5.11
+        "km": 10.32
       }
     ],
     "long_run_progression": [
@@ -326,6 +326,40 @@
     ]
   },
   "runs": [
+    {
+      "id": "20387553290",
+      "name": "Evening Run",
+      "date": "2026-09-29",
+      "distance_km": 1.64,
+      "moving_time_sec": 670,
+      "elapsed_time_sec": 674,
+      "pace": "6:48",
+      "elevation_gain": 2.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 161.1,
+      "max_hr": 176.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "20387553209",
+      "name": "TAEB track run 400m x 8 with 60 sec break",
+      "date": "2026-09-29",
+      "distance_km": 3.57,
+      "moving_time_sec": 1309,
+      "elapsed_time_sec": 1363,
+      "pace": "6:06",
+      "elevation_gain": 2.4,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 158.5,
+      "max_hr": 191.0,
+      "calories": 0,
+      "run_type": "interval"
+    },
     {
       "id": "20368426311",
       "name": "TAEB Monday morning run",
