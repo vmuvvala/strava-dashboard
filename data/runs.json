@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-10-02T12:09:35.186575+00:00",
+  "synced_at": "2026-10-02T19:03:40.153735+00:00",
   "stats": {
-    "total_runs": 117,
-    "total_km": 779.4,
-    "total_miles": 484.3,
+    "total_runs": 118,
+    "total_km": 782.7,
+    "total_miles": 486.3,
     "total_prs": 76,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -127,7 +127,7 @@
       },
       {
         "week": "2026-09-28",
-        "km": 10.32
+        "km": 13.56
       }
     ],
     "long_run_progression": [
@@ -327,6 +327,23 @@
   },
   "runs": [
     {
+      "id": "20420911706",
+      "name": "TAEB 2 mile morning run",
+      "date": "2026-10-02",
+      "distance_km": 3.24,
+      "moving_time_sec": 1374,
+      "elapsed_time_sec": 1805,
+      "pace": "7:03",
+      "elevation_gain": 10.8,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 3,
+      "avg_hr": 155.9,
+      "max_hr": 173.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
       "id": "20387553290",
       "name": "Evening Run",
       "date": "2026-09-29",
@@ -337,7 +354,7 @@
       "elevation_gain": 2.0,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 5,
+      "kudos_count": 6,
       "avg_hr": 161.1,
       "max_hr": 176.0,
       "calories": 0,
@@ -354,7 +371,7 @@
       "elevation_gain": 2.4,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 7,
+      "kudos_count": 8,
       "avg_hr": 158.5,
       "max_hr": 191.0,
       "calories": 0,
