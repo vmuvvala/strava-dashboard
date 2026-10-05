@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-10-05T14:03:32.216059+00:00",
+  "synced_at": "2026-10-05T22:23:06.507359+00:00",
   "stats": {
-    "total_runs": 119,
-    "total_km": 792.3,
-    "total_miles": 492.3,
+    "total_runs": 121,
+    "total_km": 796.1,
+    "total_miles": 494.7,
     "total_prs": 77,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -128,6 +128,10 @@
       {
         "week": "2026-09-28",
         "km": 23.24
+      },
+      {
+        "week": "2026-10-05",
+        "km": 3.79
       }
     ],
     "long_run_progression": [
@@ -331,6 +335,40 @@
   },
   "runs": [
     {
+      "id": "20465361185",
+      "name": "Morning Run",
+      "date": "2026-10-05",
+      "distance_km": 0.56,
+      "moving_time_sec": 256,
+      "elapsed_time_sec": 575,
+      "pace": "7:38",
+      "elevation_gain": 3.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 0,
+      "avg_hr": 136.7,
+      "max_hr": 146.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
+      "id": "20465360330",
+      "name": "Lunch Run",
+      "date": "2026-10-05",
+      "distance_km": 3.23,
+      "moving_time_sec": 1440,
+      "elapsed_time_sec": 1445,
+      "pace": "7:25",
+      "elevation_gain": 6.8,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 143.7,
+      "max_hr": 168.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
+    {
       "id": "20435904475",
       "name": "TAEB (2026) last weekend long run",
       "date": "2026-10-03",
@@ -341,7 +379,7 @@
       "elevation_gain": 42.4,
       "pr_count": 1,
       "achievement_count": 4,
-      "kudos_count": 14,
+      "kudos_count": 16,
       "avg_hr": 167.2,
       "max_hr": 179.0,
       "calories": 0,
