@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-10-08T08:36:02.271774+00:00",
+  "synced_at": "2026-10-08T17:16:50.068458+00:00",
   "stats": {
-    "total_runs": 121,
-    "total_km": 796.1,
-    "total_miles": 494.7,
+    "total_runs": 122,
+    "total_km": 799.4,
+    "total_miles": 496.7,
     "total_prs": 77,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -131,7 +131,7 @@
       },
       {
         "week": "2026-10-05",
-        "km": 3.79
+        "km": 7.1
       }
     ],
     "long_run_progression": [
@@ -334,6 +334,23 @@
     ]
   },
   "runs": [
+    {
+      "id": "20503690576",
+      "name": "TAEB final training run of the season before race day",
+      "date": "2026-10-08",
+      "distance_km": 3.31,
+      "moving_time_sec": 1442,
+      "elapsed_time_sec": 1847,
+      "pace": "7:15",
+      "elevation_gain": 15.0,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 2,
+      "avg_hr": 146.1,
+      "max_hr": 160.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "20465361185",
       "name": "Morning Run",
