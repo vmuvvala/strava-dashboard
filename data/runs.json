@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-10-11T18:42:32.941079+00:00",
+  "synced_at": "2026-10-11T23:30:34.602444+00:00",
   "stats": {
-    "total_runs": 122,
-    "total_km": 799.4,
-    "total_miles": 496.7,
+    "total_runs": 123,
+    "total_km": 807.5,
+    "total_miles": 501.7,
     "total_prs": 77,
     "longest_km": 35.51,
     "peak_week_km": 59.6,
@@ -131,7 +131,7 @@
       },
       {
         "week": "2026-10-05",
-        "km": 7.1
+        "km": 15.12
       }
     ],
     "long_run_progression": [
@@ -330,10 +330,31 @@
       {
         "date": "2026-10-03",
         "km": 9.68
+      },
+      {
+        "date": "2026-10-11",
+        "km": 8.02
       }
     ]
   },
   "runs": [
+    {
+      "id": "20546623540",
+      "name": "Afternoon Run",
+      "date": "2026-10-11",
+      "distance_km": 8.02,
+      "moving_time_sec": 4304,
+      "elapsed_time_sec": 4392,
+      "pace": "8:56",
+      "elevation_gain": 11.2,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 7,
+      "avg_hr": null,
+      "max_hr": null,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "20503690576",
       "name": "TAEB final training run of the season before race day",
