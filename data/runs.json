@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-11T23:30:34.602444+00:00",
+  "synced_at": "2026-10-12T05:10:31.258320+00:00",
   "stats": {
     "total_runs": 123,
     "total_km": 807.5,
@@ -340,7 +340,7 @@
   "runs": [
     {
       "id": "20546623540",
-      "name": "Afternoon Run",
+      "name": "Chicago marathon run",
       "date": "2026-10-11",
       "distance_km": 8.02,
       "moving_time_sec": 4304,
@@ -349,7 +349,7 @@
       "elevation_gain": 11.2,
       "pr_count": 0,
       "achievement_count": 0,
-      "kudos_count": 7,
+      "kudos_count": 13,
       "avg_hr": null,
       "max_hr": null,
       "calories": 0,
