@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-10-28T16:29:28.142382+00:00",
+  "synced_at": "2026-10-28T22:21:58.154871+00:00",
   "stats": {
-    "total_runs": 124,
-    "total_km": 849.6,
-    "total_miles": 527.9,
+    "total_runs": 125,
+    "total_km": 854.7,
+    "total_miles": 531.1,
     "total_prs": 77,
     "longest_km": 42.16,
     "peak_week_km": 59.6,
@@ -132,6 +132,10 @@
       {
         "week": "2026-10-05",
         "km": 57.28
+      },
+      {
+        "week": "2026-10-26",
+        "km": 5.07
       }
     ],
     "long_run_progression": [
@@ -342,6 +346,23 @@
     ]
   },
   "runs": [
+    {
+      "id": "20769974424",
+      "name": "Morning Run",
+      "date": "2026-10-28",
+      "distance_km": 5.07,
+      "moving_time_sec": 2214,
+      "elapsed_time_sec": 2581,
+      "pace": "7:16",
+      "elevation_gain": 14.4,
+      "pr_count": 0,
+      "achievement_count": 0,
+      "kudos_count": 1,
+      "avg_hr": 156.8,
+      "max_hr": 169.0,
+      "calories": 0,
+      "run_type": "easy"
+    },
     {
       "id": "20552442948",
       "name": "Chicago Marathon Run",
